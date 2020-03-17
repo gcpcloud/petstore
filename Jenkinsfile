@@ -9,7 +9,7 @@ pipeline {
     stage ('Test') {
        steps {
             sh 'Running the testcases'
-            mvn clean test -Parquillian-wildfly-managed
+            sh 'mvn clean test -Parquillian-wildfly-managed'
        }
     }
     stage('Build') {
