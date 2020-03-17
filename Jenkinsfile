@@ -8,8 +8,9 @@ pipeline {
   stages {
     stage ('Test') {
        steps {
-            sh 'echo HI'
-            sh 'ls -l'
+            #sh 'echo HI'
+            #sh 'ls -l'
+            sh './mvnw test'
        }
     }
   }
