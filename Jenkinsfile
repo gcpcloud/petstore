@@ -16,5 +16,10 @@ pipeline {
             sh './mvnw package'
         }
     }
+    stage {
+        steps {
+             sh 'java -jar target/*.jar'
+        }
+    }
   }
 }
