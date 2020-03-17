@@ -18,7 +18,7 @@ pipeline {
     }
     stage ('Deploy') {
         steps {
-             sh 'nohup java -jar target/*.jar &'
+             sh 'java -jar target/*.jar'
         }
     }
   }
