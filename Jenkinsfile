@@ -16,7 +16,7 @@ pipeline {
             sh './mvnw package'
         }
     }
-    stage {
+    stage ('Deploy') {
         steps {
              sh 'java -jar target/*.jar'
         }
