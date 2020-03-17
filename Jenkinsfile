@@ -9,6 +9,7 @@ pipeline {
     stage('Build') {
       steps {
         sh 'hostname'
+        sh 'mvn --version'  
       }
     }
 
