@@ -8,8 +8,7 @@ pipeline {
   stages {
     stage ('Test') {
        steps {
-            sh 'Running the test cases'
-            sh 'ls -l .'
+            sh 'echo HI'
        }
     }
   }
