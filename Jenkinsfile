@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage ('Test') {
        steps {
-            sh 'Running the testcases'
+            sh 'Running the test cases'
             sh 'ls -l .'
        }
     }
